@@ -5,14 +5,26 @@
     <meta name="author" content="Rafael Timoteo">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Projeto Academy</title>
 </head>
 <body>
-    <h1>Hello World Spring!</h1>
-    <h2 th:text="${msg}"></h2>
+    
+   <div th:replace="fragmentos/fragmentos :: cabecalho"></div>
 
-    <button class="btn btn-primary">teste</button>
-
+    <main>
+        <section class="neo-section">
+            <div class="texto-main">
+                <h1>Sistema de gerenciamento de alunos</h1>
+            </div>
+            <div class="wm">
+                <button class="btn btn-primary">CADASTRAR ALUNO</button>
+            </div>
+            <div class="wm">
+                <button class="btn btn-success">ENCONTRAR ALUNO</button>
+            </div>
+        </section>
+    </main>
     <script src="/webjars/jquery/3.7.1/jquery.min.js"></script>`
     <script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
 </body>

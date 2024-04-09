@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(236, 215, 250);
+}
+
+nav {
+    margin-bottom: 25px;
+    background-color: rgb(106, 32, 175);
+}
+
+main {
+    max-width: 1250px;
+    padding: 10px;
+    margin: auto;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.wm {
+    padding: 5px;
+}
