@@ -1,4 +1,4 @@
-package br.com.academy.model;
+package br.com.academy.enums;
 
 public enum Status {
     ATIVO("Ativo"),

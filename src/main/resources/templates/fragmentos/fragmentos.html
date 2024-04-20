@@ -13,16 +13,19 @@
     <!--Cabeçalho -->
     <header th:fragment="cabecalho">
         <nav class="navbar navbar-expand-lg navbar-dark">
+            <div style="margin-left: 10px;">
+                <img src="img/spring-boot-icon.png" style="width: 50px;" alt="Icon do Spring Boot">
+            </div>
             <div class="container-fluid">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" th:href="@{/}">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Pesquisar aluno</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Cadastrar aluno</a>
+                        <a class="nav-link" th:href="@{inserirAlunos}">Cadastrar aluno</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Sair</a>
