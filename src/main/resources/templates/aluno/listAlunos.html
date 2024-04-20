@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Rafael Timoteo">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Projeto Academy</title>
+</head>
+
+<body>
+    <div th:replace="fragmentos/fragmentos :: cabecalho"></div>    
+
+    <div class="container">
+        <h3>Ultimos alunos adicionados</h3>
+        <hr>
+        <table class="table table-bordered table-hover">
+            <thead>
+                <th scope="col">Nome</th>
+                <th scope="col">Curso</th>
+                <th scope="col">Matricula</th>
+                <th scope="col">Status</th>
+                <th scope="col">Turno</th>
+            </thead>
+            <tbody>
+                <tr scope="row" th:each="alunos : ${alunosList}">
+                    <td th:text="${alunos.nome}"></td>
+                    <td th:text="${alunos.curso}"></td>
+                    <td th:text="${alunos.matricula}"></td>
+                    <td th:text="${alunos.status}"></td>
+                    <td th:text="${alunos.turno}"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="/webjars/jquery/3.7.1/jquery.min.js"></script>
+    <script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+</body>
