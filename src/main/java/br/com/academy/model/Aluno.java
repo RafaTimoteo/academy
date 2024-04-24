@@ -10,6 +10,11 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+
+
 @Entity
 public class Aluno {
 
@@ -18,20 +23,27 @@ public class Aluno {
     private Integer id;
 
     @Column(name = "nome")
+    @Size(min = 5, max = 45, message = "O nome deve contar no mínimo 5 caractere.")
+    @NotBlank(message = "O nome não pode ser vazio")
     private String nome;
 
     @Column(name = "curso")
     @Enumerated(EnumType.STRING)
+    @NotNull(message = "O campo curso não pode ser nulo.")
     private Curso curso;
 
     @Column(name = "matricula")
+    @NotNull(message = "Clique no botão para gerar a matrícula.")
     private String matricula;
 
     @Column(name = "status")
     @Enumerated(EnumType.STRING)
+    @NotNull(message = "O campo status não pode ser nulo.")
     private Status status;
 
     @Column(name = "turno")
+    @Size(message = "o campo turno deve te no mínim 4 caracteres")
+    @NotBlank(message = "O campo turno não pode ser vazio.")
     private String turno;
 
 
