@@ -22,6 +22,7 @@
                 <th scope="col">Matricula</th>
                 <th scope="col">Status</th>
                 <th scope="col">Turno</th>
+                <th scope="col">Ação</th>
             </thead>
             <tbody>
                 <tr scope="row" th:each="alunos : ${alunosList}">
@@ -30,6 +31,11 @@
                     <td th:text="${alunos.matricula}"></td>
                     <td th:text="${alunos.status}"></td>
                     <td th:text="${alunos.turno}"></td>
+
+                    <td>
+                        <a class="btn btn-primary" th:href="@{alterar/{id}(id=${alunos.id})}">Editar</a>
+                        <a class="btn btn-danger" th:href="@{deletar/{id}(id=${alunos.id})}">Excluir</a>
+                    </td>
                 </tr>
             </tbody>
         </table>
