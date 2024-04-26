@@ -1,7 +1,5 @@
 package br.com.academy.controllers;
 
-import javax.validation.Valid;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
@@ -12,6 +10,8 @@ import org.springframework.web.servlet.ModelAndView;
 
 import br.com.academy.dao.AlunoDao;
 import br.com.academy.model.Aluno;
+
+import jakarta.validation.Valid;
 
 @Controller
 public class AlunoController {
