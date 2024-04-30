@@ -70,4 +70,11 @@ public class AlunoController {
         alunorepositorio.deleteById(id);
         return "redirect:/alunos-adicionados";
     }
+
+    @GetMapping("filtro-alunos")
+    public ModelAndView filtroAlunos() {
+        ModelAndView mv = new ModelAndView();
+        mv.setViewName("aluno/filtroAlunos");
+        return mv;
+    }
 }

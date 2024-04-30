@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Rafael Timoteo">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Encontrar alunos</title>
+</head>
+
+<body>
+    <div th:replace="fragmentos/fragmentos :: cabecalho"></div>    
+    <div class="container">
+        <h4>Encontrar alunos</h4>
+        <hr>
+        <br>
+        
+        <div class="row">
+
+            <!-- Alunos ativos -->
+            <div class="card" style="width: 288px;">
+                <img class="card-img-top" src="img/ativos.png" alt="alunos ativos">
+                <div class="card-body">
+                    <h5 class="card-title">Alunos ativos</h5>
+                    <p class="card-text">Busque por todos os alunos que estão ativos no sistema.</p>
+                    <a class="btn btn-outline-primary">Clique aqui!</a>
+                </div>
+            </div>
+
+            <!-- Alunos inativos -->
+            <div class="card" style="width: 288px;">
+                <img class="card-img-top" src="img/inativos.webp" alt="alunos inativos">
+                <div class="card-body">
+                    <h5 class="card-title">Alunos inativos</h5>
+                    <p class="card-text">Busque por todos os alunos que estão inativos no sistema.</p>
+                    <a class="btn btn-outline-primary">Clique aqui!</a>
+                </div>
+            </div>
+
+            <!-- Alunos cancelados -->
+            <div class="card" style="width: 288px;">
+                <img class="card-img-top" src="img/cancelados.jpg" alt="alunos inativos">
+                <div class="card-body">
+                    <h5 class="card-title">Alunos cancelados</h5>
+                    <p class="card-text">Busque por todos os alunos que estão cancelados no sistema.</p>
+                    <a class="btn btn-outline-primary">Clique aqui!</a>
+                </div>
+            </div>
+
+            <!-- Alunos trancados -->
+            <div class="card" style="width: 288px;">
+                <img class="card-img-top" src="img/trancados.webp" alt="alunos inativos">
+                <div class="card-body">
+                    <h5 class="card-title">Alunos trancados</h5>
+                    <p class="card-text">Busque por todos os alunos que estão trancados no sistema.</p>
+                    <a class="btn btn-outline-primary">Clique aqui!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="js/main.js"></script>
+    <script src="/webjars/jquery/3.7.1/jquery.min.js"></script>
+    <script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+</body>

@@ -36,3 +36,13 @@ main {
 .row {
     padding: 10px;
 }
+
+.card {
+    padding: 0;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+.card img {
+    height: 170px;
+}
