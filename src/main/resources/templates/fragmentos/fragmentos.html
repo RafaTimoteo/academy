@@ -14,7 +14,9 @@
     <header th:fragment="cabecalho">
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div style="margin-left: 10px;">
-                <img src="/img/spring-boot-icon.png" style="width: 50px;" alt="Icon do Spring Boot">
+                <a th:href="@{/}">
+                    <img src="/img/spring-boot-icon.png" style="width: 50px;" alt="Icon do Spring Boot">
+                </a>
             </div>
             <div class="container-fluid">
                 <ul class="navbar-nav">
