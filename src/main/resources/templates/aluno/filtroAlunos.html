@@ -15,11 +15,11 @@
         <h4>Encontrar alunos</h4>
         <hr>
 
-        <form method="post">
+        <form method="post" action="pesquisar-nome-aluno" th:object="${aluno}">
             <div class="input-group col-6">
-                <input class="form-control" placeholder="Busque pelo nome do aluno...">
+                <input class="form-control" th:field="*{nome}" placeholder="Busque pelo nome do aluno...">
                 <div class="input-group-append">
-                    <button type="submit" class="btn btn-outline-secondary">Pesquisa</button>
+                    <button type="submit" class="btn btn-outline-secondary">Pesquisar</button>
                 </div>
             </div>
         </form>
@@ -76,9 +76,6 @@
             </div>
         </div>
     </div>
-
-
-
 
     <script src="js/main.js"></script>
     <script src="/webjars/jquery/3.7.1/jquery.min.js"></script>
