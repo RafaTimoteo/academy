@@ -46,3 +46,17 @@ main {
 .card img {
     height: 170px;
 }
+
+.rodape {
+    background-color: rgb(106, 32, 175);
+    color: white;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+}
+
+.rodape a {
+    color: white;
+    text-decoration: none;
+}
