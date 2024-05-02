@@ -10,7 +10,6 @@ import org.springframework.web.servlet.ModelAndView;
 
 import br.com.academy.dao.AlunoDao;
 import br.com.academy.model.Aluno;
-
 import jakarta.validation.Valid;
 
 @Controller
@@ -75,6 +74,38 @@ public class AlunoController {
     public ModelAndView filtroAlunos() {
         ModelAndView mv = new ModelAndView();
         mv.setViewName("aluno/filtroAlunos");
+        return mv;
+    }
+
+    @GetMapping("alunos-ativos")
+    public ModelAndView listaAlunosAtivos() {
+        ModelAndView mv = new ModelAndView();
+        mv.setViewName("aluno/listAlunosAtivos");
+        mv.addObject("alunosAtivos", alunorepositorio.findByStatusAtivos());
+        return mv;
+    }
+
+    @GetMapping("alunos-inativos")
+    public ModelAndView listaAlunosInativos() {
+        ModelAndView mv = new ModelAndView();
+        mv.setViewName("aluno/listAlunosInativos");
+        mv.addObject("alunosInativos", alunorepositorio.findByStatusInativos());
+        return mv;
+    }
+
+    @GetMapping("alunos-cancelados")
+    public ModelAndView listaAlunosCancelados() {
+        ModelAndView mv = new ModelAndView();
+        mv.setViewName("aluno/listAlunosCancelados");
+        mv.addObject("alunosCancelados", alunorepositorio.findByStatusCancelados());
+        return mv;
+    }
+
+    @GetMapping("alunos-trancados")
+    public ModelAndView listaAlunosTrancados() {
+        ModelAndView mv = new ModelAndView();
+        mv.setViewName("aluno/listAlunosTrancados");
+        mv.addObject("alunosTrancados", alunorepositorio.findByStatusTrancados());
         return mv;
     }
 }

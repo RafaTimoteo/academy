@@ -14,47 +14,64 @@
     <div class="container">
         <h4>Encontrar alunos</h4>
         <hr>
-        <br>
-        
+
+        <form method="post">
+            <div class="input-group col-6">
+                <input class="form-control" placeholder="Busque pelo nome do aluno...">
+                <div class="input-group-append">
+                    <button type="submit" class="btn btn-outline-secondary">Pesquisa</button>
+                </div>
+            </div>
+        </form>
+
+        <hr>
         <div class="row">
 
             <!-- Alunos ativos -->
             <div class="card" style="width: 288px;">
-                <img class="card-img-top" src="img/ativos.png" alt="alunos ativos">
+                <a th:href="@{alunos-ativos}">
+                    <img class="card-img-top" src="img/ativos.png" alt="alunos ativos">
+                </a>
                 <div class="card-body">
                     <h5 class="card-title">Alunos ativos</h5>
                     <p class="card-text">Busque por todos os alunos que estão ativos no sistema.</p>
-                    <a class="btn btn-outline-primary">Clique aqui!</a>
+                    <a class="btn btn-outline-primary" th:href="@{alunos-ativos}">Clique aqui!</a>
                 </div>
             </div>
 
             <!-- Alunos inativos -->
             <div class="card" style="width: 288px;">
-                <img class="card-img-top" src="img/inativos.webp" alt="alunos inativos">
+                <a th:href="@{alunos-inativos}">
+                    <img class="card-img-top" src="img/inativos.webp" alt="alunos inativos">
+                </a>
                 <div class="card-body">
                     <h5 class="card-title">Alunos inativos</h5>
                     <p class="card-text">Busque por todos os alunos que estão inativos no sistema.</p>
-                    <a class="btn btn-outline-primary">Clique aqui!</a>
+                    <a class="btn btn-outline-primary" th:href="@{alunos-inativos}">Clique aqui!</a>
                 </div>
             </div>
 
             <!-- Alunos cancelados -->
             <div class="card" style="width: 288px;">
-                <img class="card-img-top" src="img/cancelados.jpg" alt="alunos inativos">
+                <a th:href="@{alunos-cancelados}">
+                    <img class="card-img-top" src="img/cancelados.jpg" alt="alunos inativos">
+                </a>
                 <div class="card-body">
                     <h5 class="card-title">Alunos cancelados</h5>
                     <p class="card-text">Busque por todos os alunos que estão cancelados no sistema.</p>
-                    <a class="btn btn-outline-primary">Clique aqui!</a>
+                    <a class="btn btn-outline-primary" th:href="@{alunos-cancelados}">Clique aqui!</a>
                 </div>
             </div>
 
             <!-- Alunos trancados -->
             <div class="card" style="width: 288px;">
-                <img class="card-img-top" src="img/trancados.webp" alt="alunos inativos">
+                <a th:href="@{alunos-trancados}">
+                    <img class="card-img-top" src="img/trancados.webp" alt="alunos inativos">
+                </a>
                 <div class="card-body">
                     <h5 class="card-title">Alunos trancados</h5>
                     <p class="card-text">Busque por todos os alunos que estão trancados no sistema.</p>
-                    <a class="btn btn-outline-primary">Clique aqui!</a>
+                    <a class="btn btn-outline-primary" th:href="@{alunos-trancados}">Clique aqui!</a>
                 </div>
             </div>
         </div>
