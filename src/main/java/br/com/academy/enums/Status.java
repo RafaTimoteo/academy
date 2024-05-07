@@ -3,7 +3,7 @@ package br.com.academy.enums;
 public enum Status {
     ATIVO("Ativo"),
     INATIVO("Inativo"),
-    TRANCADO("trancado"),
+    TRANCADO("Trancado"),
     CANCELADO("Cancelado");
 
     private String status;

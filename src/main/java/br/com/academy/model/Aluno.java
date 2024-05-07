@@ -23,7 +23,7 @@ public class Aluno {
     private Integer id;
 
     @Column(name = "nome")
-    @Size(min = 5, max = 45, message = "O nome deve contar no mínimo 5 caractere.")
+    @Size(min = 5, max = 45, message = "O nome deve contar no mínimo 5 caracteres.")
     @NotBlank(message = "O nome não pode ser vazio")
     private String nome;
 
