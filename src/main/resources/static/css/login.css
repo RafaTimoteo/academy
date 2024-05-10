@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+body {
+    height: 100vh; /* Usando a unidade de viewport height para garantir que o background cubra toda a tela */
+    margin: 0; /* Removendo margens padrão do body */
+    padding: 0; /* Removendo padding padrão do body */
+    font-family: Arial, sans-serif; /* Definindo uma fonte padrão */
+    background-image: url(/img/tela-de-login.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex; /* Usando flexbox para centralizar o conteúdo verticalmente */
+    justify-content: center; /* Centralizando horizontalmente */
+    align-items: center; /* Centralizando verticalmente */
+}
+
+.Login-Form {
+    width: 350px; /* Definindo uma largura para o formulário */
+    padding: 20px;
+    background-color: #f8f9fa; /* Cor de fundo do formulário */
+    border-radius: 10px; /* Arredondando as bordas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adicionando sombra */
+    line-height: 1.5;
+}
+
+.text-header {
+    text-align: center; /* Centralizando o texto */
+    margin-bottom: 20px; /* Adicionando um espaçamento inferior */
+}
+
+form {
+    margin-bottom: 20px; /* Adicionando um espaçamento inferior */
+}
+
+form input {
+    width: 100%; /* Ocupando toda a largura disponível */
+    padding: 10px; /* Adicionando um espaçamento interno */
+    margin-bottom: 10px; /* Adicionando um espaçamento inferior */
+    border-radius: 5px; /* Arredondando as bordas */
+    border: 1px solid #ced4da; /* Adicionando uma borda */
+}
+
+.cadastro {
+    text-align: center; /* Centralizando o texto */
+    margin-bottom: 20px; /* Adicionando um espaçamento inferior */
+}
+
+h2 {
+    font-size: 28px; /* Tamanho da fonte */
+    color: #333; /* Cor do texto */
+    margin-bottom: 20px; /* Espaçamento inferior */
+    text-align: center; /* Alinhamento centralizado */
+    text-transform: uppercase; /* Transformação para maiúsculas */
+    letter-spacing: 2px; /* Espaçamento entre letras */
+}
+
+
+button {
+    width: 100%; /* Ocupando toda a largura disponível */
+    padding: 10px; /* Adicionando um espaçamento interno */
+    border: none; /* Removendo a borda */
+    border-radius: 5px; /* Arredondando as bordas */
+    cursor: pointer; /* Adicionando cursor de mão ao passar por cima */
+}
+
+.btn-primary {
+    background-color: #007bff; /* Cor de fundo do botão primário */
+    color: #fff; /* Cor do texto do botão primário */
+}
+
+.btn-info {
+    background-color: #17a2b8; /* Cor de fundo do botão de informação */
+    color: #fff; /* Cor do texto do botão de informação */
+}
+
+.btn-primary:hover, .btn-info:hover {
+    opacity: 0.8; /* Reduzindo a opacidade ao passar por cima */
+}
+
