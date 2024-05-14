@@ -13,4 +13,7 @@ public interface UsuarioDao extends JpaRepository<Usuario, Long> {
     @Query("select e from Usuario e where e.userName = :userName")
     public Usuario findByUserName(String userName);
 
+    @Query("select e from Usuario e where e.userName = :userName and e.senha = :senha")
+    public Usuario buscarLogin(String userName, String senha);
+
 }
