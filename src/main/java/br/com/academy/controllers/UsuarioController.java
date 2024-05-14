@@ -76,4 +76,10 @@ public class UsuarioController {
 
         return mv;
     }
+
+    @PostMapping("logout")
+    public ModelAndView logout(HttpSession session) {
+        session.invalidate();
+        return login();
+    }
 }  
